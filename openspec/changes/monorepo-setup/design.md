@@ -36,7 +36,7 @@ The chosen methodology is Clean Architecture. Every structural decision must ref
 
 **Decision:** Both `apps/web` and `apps/api` use a strict four-layer folder structure from the start.
 
-```
+```plaintext
 src/
 ├── domain/          # Entities, value objects, repository interfaces
 ├── application/     # Use cases, DTOs, ports
