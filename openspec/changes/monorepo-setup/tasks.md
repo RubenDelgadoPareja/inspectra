@@ -16,13 +16,13 @@
 
 ## 3. Frontend Scaffold (apps/web)
 
-- [x] 3.1 Scaffold Next.js 15 app with App Router and TypeScript inside `apps/web`
+- [x] 3.1 Scaffold Next.js 16 app with App Router and TypeScript inside `apps/web`
 - [x] 3.2 Configure `apps/web/tsconfig.json` extending `@inspectra/typescript-config/nextjs`
 - [x] 3.3 Configure `apps/web/.eslintrc.js` extending `@inspectra/eslint-config/next`
 - [x] 3.4 Install and configure Tailwind CSS v4
 - [x] 3.5 Initialise shadcn/ui and add Button component as baseline
 - [x] 3.6 Create Clean Architecture folder structure: `src/domain/`, `src/application/`, `src/infrastructure/`, `src/presentation/`
-- [x] 3.7 Move Next.js `app/` router inside `src/presentation/app/`
+- [x] 3.7 Move Next.js `app/` router inside `src/app/`
 - [x] 3.8 Create `apps/web/.env.example` with `NEXT_PUBLIC_API_URL` and any other required vars
 - [x] 3.9 Verify `pnpm dev` starts Next.js on port 3000
 
