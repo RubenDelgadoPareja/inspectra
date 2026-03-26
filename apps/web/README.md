@@ -30,6 +30,6 @@ src/
 ├── domain/           # Entidades, value objects, interfaces de repositorio
 ├── application/      # Casos de uso, DTOs, puertos
 ├── infrastructure/   # Adaptadores externos, APIs, storage
-└── presentation/
-    └── app/          # App Router de Next.js (páginas, layouts, componentes)
+├── presentation/     # Componentes UI reutilizables, layouts compartidos
+└── app/              # App Router de Next.js (páginas y layouts — capa de presentación)
 ```

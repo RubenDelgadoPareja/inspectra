@@ -24,7 +24,7 @@
 - [x] 3.6 Create Clean Architecture folder structure: `src/domain/`, `src/application/`, `src/infrastructure/`, `src/presentation/`
 - [x] 3.7 Move Next.js `app/` router inside `src/presentation/app/`
 - [x] 3.8 Create `apps/web/.env.example` with `NEXT_PUBLIC_API_URL` and any other required vars
-- [ ] 3.9 Verify `pnpm dev` starts Next.js on port 3000
+- [x] 3.9 Verify `pnpm dev` starts Next.js on port 3000
 
 ## 4. Backend Scaffold (apps/api)
 
@@ -35,7 +35,7 @@
 - [x] 4.5 Move NestJS bootstrap into `src/presentation/` and reorganise default module
 - [x] 4.6 Add `GET /health` endpoint returning `{ status: "ok" }`
 - [x] 4.7 Create `apps/api/.env.example` with `PORT`, `NODE_ENV`, and placeholder DB/Redis vars
-- [ ] 4.8 Verify `pnpm dev` starts NestJS on port 3001 and `/health` returns 200
+- [x] 4.8 Verify `pnpm dev` starts NestJS on port 3001 and `/health` returns 200
 
 ## 5. README
 
