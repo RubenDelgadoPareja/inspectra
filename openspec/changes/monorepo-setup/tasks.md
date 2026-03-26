@@ -20,7 +20,7 @@
 - [x] 3.2 Configure `apps/web/tsconfig.json` extending `@inspectra/typescript-config/nextjs`
 - [x] 3.3 Configure `apps/web/.eslintrc.js` extending `@inspectra/eslint-config/next`
 - [x] 3.4 Install and configure Tailwind CSS v4
-- [ ] 3.5 Initialise shadcn/ui and add Button component as baseline
+- [x] 3.5 Initialise shadcn/ui and add Button component as baseline
 - [x] 3.6 Create Clean Architecture folder structure: `src/domain/`, `src/application/`, `src/infrastructure/`, `src/presentation/`
 - [x] 3.7 Move Next.js `app/` router inside `src/presentation/app/`
 - [x] 3.8 Create `apps/web/.env.example` with `NEXT_PUBLIC_API_URL` and any other required vars
@@ -45,9 +45,9 @@
 
 ## 6. Validation
 
-- [ ] 6.1 Run `pnpm install` from root — zero errors
-- [ ] 6.2 Run `pnpm dev` from root — both apps start in parallel
-- [ ] 6.3 Run `pnpm build` from root — both apps build successfully
-- [ ] 6.4 Run `pnpm lint` from root — no lint errors
-- [ ] 6.5 Verify `GET http://localhost:3001/health` returns `{ status: "ok" }`
-- [ ] 6.6 Verify `http://localhost:3000` loads the Next.js home page
+- [x] 6.1 Run `pnpm install` from root — zero errors
+- [x] 6.2 Run `pnpm dev` from root — both apps start in parallel
+- [x] 6.3 Run `pnpm build` from root — both apps build successfully
+- [x] 6.4 Run `pnpm lint` from root — no lint errors
+- [x] 6.5 Verify `GET http://localhost:3001/health` returns `{ status: "ok" }`
+- [x] 6.6 Verify `http://localhost:3000` loads the Next.js home page
