@@ -33,7 +33,7 @@ pnpm dev        # Arranca frontend (3000) y backend (3001) en paralelo
 ```
 inspectra/
 ├── apps/
-│   ├── web/          # Frontend — Next.js 15, App Router, Tailwind, shadcn/ui
+│   ├── web/          # Frontend — Next.js 16, App Router, Tailwind, shadcn/ui
 │   └── api/          # Backend  — NestJS, Clean Architecture
 ├── packages/
 │   ├── typescript-config/   # Presets de tsconfig compartidos
@@ -45,7 +45,7 @@ inspectra/
 
 | Capa        | Tecnología                        |
 |-------------|-----------------------------------|
-| Frontend    | Next.js 15, React 19, TypeScript  |
+| Frontend    | Next.js 16, React 19, TypeScript  |
 | Estilos     | Tailwind CSS v4, shadcn/ui        |
 | Backend     | NestJS 11, TypeScript             |
 | Monorepo    | pnpm workspaces + Turborepo       |

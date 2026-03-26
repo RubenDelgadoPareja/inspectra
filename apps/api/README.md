@@ -19,9 +19,10 @@ Disponible en: http://localhost:3001
 
 ## Endpoints
 
-| Método | Ruta      | Descripción        |
-|--------|-----------|--------------------|
-| GET    | /health   | Estado de la API   |
+| Método | Ruta      | Descripción           |
+|--------|-----------|-----------------------|
+| GET    | /         | Hello World (default) |
+| GET    | /health   | Estado de la API      |
 
 ## Variables de entorno
 

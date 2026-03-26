@@ -1,6 +1,6 @@
 # @inspectra/web
 
-Frontend de Inspectra — Next.js 15, App Router, Tailwind CSS v4, shadcn/ui.
+Frontend de Inspectra — Next.js 16, App Router, Tailwind CSS v4, shadcn/ui.
 
 ## Requisitos
 
