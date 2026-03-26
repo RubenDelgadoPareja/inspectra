@@ -4,6 +4,12 @@
   "private": true,
   "license": "MIT",
   "main": "base.js",
+  "exports": {
+    ".": "./base.js",
+    "./next": "./next.js",
+    "./nest": "./nest.js",
+    "./nest-flat": "./nest-flat.cjs"
+  },
   "publishConfig": {
     "access": "public"
   }

@@ -3,6 +3,10 @@ import eslint from '@eslint/js';
 import eslintPluginPrettierRecommended from 'eslint-plugin-prettier/recommended';
 import globals from 'globals';
 import tseslint from 'typescript-eslint';
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
+const nestFlatConfig = require('@inspectra/eslint-config/nest-flat');
 
 export default tseslint.config(
   {
@@ -11,6 +15,7 @@ export default tseslint.config(
   eslint.configs.recommended,
   ...tseslint.configs.recommendedTypeChecked,
   eslintPluginPrettierRecommended,
+  ...nestFlatConfig,
   {
     languageOptions: {
       globals: {
@@ -26,13 +31,9 @@ export default tseslint.config(
   },
   {
     rules: {
-      'no-unused-vars': 'off',
-      '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
       '@typescript-eslint/no-explicit-any': 'off',
       '@typescript-eslint/no-floating-promises': 'warn',
       '@typescript-eslint/no-unsafe-argument': 'warn',
-      '@typescript-eslint/explicit-function-return-type': 'off',
-      '@typescript-eslint/explicit-module-boundary-types': 'off',
       'prettier/prettier': ['error', { endOfLine: 'auto' }],
     },
   },
