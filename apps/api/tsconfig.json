@@ -1,0 +1,13 @@
+{
+  "extends": "@inspectra/typescript-config/nestjs.json",
+  "compilerOptions": {
+    "removeComments": true,
+    "strictNullChecks": true,
+    "noImplicitAny": false,
+    "strictBindCallApply": false,
+    "noFallthroughCasesInSwitch": false,
+    "outDir": "./dist",
+    "baseUrl": "./"
+  }
+}
+

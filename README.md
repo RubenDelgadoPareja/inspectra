@@ -1,21 +1,63 @@
 # Inspectra
 
-Inspectra es una plataforma SaaS pensada para analizar sitios web de clientes de forma continua.
+Plataforma SaaS para analizar sitios web de forma continua: **SEO**, **Performance** y **Seguridad**.
 
-El producto se centra en tres pilares:
+## Requisitos
 
-- SEO: visibilidad técnica, indexabilidad y señales on-page.
-- Performance: tiempos de carga, experiencia de usuario y estabilidad.
-- Seguridad: detección de configuraciones inseguras, cabeceras y buenas prácticas.
+- Node.js >= 20
+- pnpm >= 9
 
-La idea es ofrecer una vista clara y accionable del estado de cada web, con métricas, alertas e historial para facilitar el seguimiento y la mejora continua.
+## Instalación
+
+```bash
+pnpm install
+```
+
+## Desarrollo
+
+```bash
+pnpm dev        # Arranca frontend (3000) y backend (3001) en paralelo
+```
+
+## Scripts disponibles
+
+| Comando       | Descripción                              |
+|---------------|------------------------------------------|
+| `pnpm dev`    | Arranca todos los apps en modo watch     |
+| `pnpm build`  | Compila todos los apps                   |
+| `pnpm lint`   | Ejecuta ESLint en todos los workspaces   |
+| `pnpm test`   | Ejecuta tests en todos los workspaces    |
+
+## Estructura del workspace
+
+```
+inspectra/
+├── apps/
+│   ├── web/          # Frontend — Next.js 15, App Router, Tailwind, shadcn/ui
+│   └── api/          # Backend  — NestJS, Clean Architecture
+├── packages/
+│   ├── typescript-config/   # Presets de tsconfig compartidos
+│   └── eslint-config/       # Presets de ESLint compartidos
+└── turbo.json        # Configuración de pipelines Turborepo
+```
+
+## Tech Stack
+
+| Capa        | Tecnología                        |
+|-------------|-----------------------------------|
+| Frontend    | Next.js 15, React 19, TypeScript  |
+| Estilos     | Tailwind CSS v4, shadcn/ui        |
+| Backend     | NestJS 11, TypeScript             |
+| Monorepo    | pnpm workspaces + Turborepo       |
+| Arquitectura | Clean Architecture (4 capas)     |
 
 ## OpenSpec
 
-Este repositorio está preparado con OpenSpec para trabajar los cambios mediante propuestas y especificaciones.
+Este repositorio usa OpenSpec para gestionar cambios mediante propuestas y especificaciones.
 
-- Crear una propuesta: `/opsx:propose "tu idea"`
-- Implementar una propuesta: `/opsx:apply`
-- Archivar un cambio completado: `/opsx:archive`
+- Crear propuesta: `/opsx:propose "tu idea"`
+- Implementar: `/opsx:apply`
+- Archivar: `/opsx:archive`
 
-Las especificaciones base del producto viven en `openspec/specs/`.
+Las especificaciones base viven en `openspec/specs/`.
+
