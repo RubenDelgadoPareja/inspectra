@@ -1,3 +1,5 @@
+**Related Issue:** #7
+
 ## Why
 
 El proyecto no tiene ningún pipeline de CI/CD. Sin validación automática, los errores de lint, build o tests pueden llegar a `develop` sin detección temprana. Establecer CI desde el inicio garantiza calidad consistente en cada contribución.
