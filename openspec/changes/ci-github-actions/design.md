@@ -5,7 +5,7 @@ Monorepo gestionado con pnpm workspaces y Turborepo. Contiene dos apps (`api` en
 ## Goals / Non-Goals
 
 **Goals:**
-- Ejecutar lint, build y test automáticamente en cada push y PR a `main`
+- Ejecutar lint, build y test automáticamente en cada push y PR a `develop`
 - Cachear el store de pnpm y la caché de Turbo para reducir tiempos de ejecución
 - Usar Node.js 20 y pnpm con `--frozen-lockfile` para garantizar reproducibilidad
 

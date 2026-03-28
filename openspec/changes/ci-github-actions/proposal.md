@@ -1,10 +1,10 @@
 ## Why
 
-El proyecto no tiene ningún pipeline de CI/CD. Sin validación automática, los errores de lint, build o tests pueden llegar a `main` sin detección temprana. Establecer CI desde el inicio garantiza calidad consistente en cada contribución.
+El proyecto no tiene ningún pipeline de CI/CD. Sin validación automática, los errores de lint, build o tests pueden llegar a `develop` sin detección temprana. Establecer CI desde el inicio garantiza calidad consistente en cada contribución.
 
 ## What Changes
 
-- Nuevo workflow de GitHub Actions `.github/workflows/ci.yml` que se dispara en push y PRs a `main`
+- Nuevo workflow de GitHub Actions `.github/workflows/ci.yml` que se dispara en push y PRs a `develop`
 - Pipeline con tres etapas: lint → build → test
 - Caché de pnpm store y Turbo para acelerar ejecuciones
 

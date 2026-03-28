@@ -1,14 +1,14 @@
 ## ADDED Requirements
 
-### Requirement: Pipeline de CI se ejecuta en push y PR a main
-El sistema SHALL ejecutar automáticamente el pipeline de CI en cada push a `main` y en cada pull request cuyo destino sea `main`.
+### Requirement: Pipeline de CI se ejecuta en push y PR a develop
+El sistema SHALL ejecutar automáticamente el pipeline de CI en cada push a `develop` y en cada pull request cuyo destino sea `develop`.
 
-#### Scenario: Push a main dispara el workflow
-- **WHEN** se hace push de commits a la rama `main`
+#### Scenario: Push a develop dispara el workflow
+- **WHEN** se hace push de commits a la rama `develop`
 - **THEN** el workflow `ci.yml` se inicia automáticamente en GitHub Actions
 
-#### Scenario: Pull request a main dispara el workflow
-- **WHEN** se abre, actualiza o sincroniza un pull request con base en `main`
+#### Scenario: Pull request a develop dispara el workflow
+- **WHEN** se abre, actualiza o sincroniza un pull request con base en `develop`
 - **THEN** el workflow `ci.yml` se inicia automáticamente y su resultado se muestra como check en el PR
 
 ---

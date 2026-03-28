@@ -1,7 +1,7 @@
 ## 1. Configuración del workflow
 
 - [x] 1.1 Crear directorio `.github/workflows/` si no existe
-- [x] 1.2 Crear `.github/workflows/ci.yml` con triggers `push` y `pull_request` a `main`
+- [x] 1.2 Crear `.github/workflows/ci.yml` con triggers `push` y `pull_request` a `develop`
 - [x] 1.3 Configurar el step de setup: Node.js 20, pnpm via `pnpm/action-setup@v4`
 
 ## 2. Caché de dependencias
