@@ -67,6 +67,16 @@
       "**/*.(t|j)s"
     ],
     "coverageDirectory": "../coverage",
-    "testEnvironment": "node"
+    "testEnvironment": "node",
+    "coverageThreshold": {
+      "src/domain/**/*.ts": {
+        "lines": 80,
+        "functions": 80
+      },
+      "src/application/**/*.ts": {
+        "lines": 80,
+        "functions": 80
+      }
+    }
   }
 }
