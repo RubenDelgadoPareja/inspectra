@@ -21,13 +21,13 @@ Monorepo gestionado con pnpm workspaces y Turborepo. Contiene dos apps (`api` en
 
 **Decisión:** Jobs secuenciales `lint → build → test`.
 
-**Rationale:** Turbo ya tiene `test` con `dependsOn: ["^build"]` y `build` con `dependsOn: ["^lint"]` en su pipeline. Ejecutarlos en orden evita duplicar lógica de dependencias. El tiempo extra es mínimo gracias a la caché de Turbo.
+**Rationale:** El workflow encadena `lint → build → test` con `needs`, lo que hace explícito el gateo entre etapas en CI. Turbo sigue aportando ejecución incremental y reutilización de resultados vía caché.
 
 **Alternativa considerada:** Jobs paralelos — descartado porque `test` requiere artefactos de `build` y generaría race conditions sin caché compartida entre jobs.
 
 ### 2. Caché de pnpm store
 
-**Decisión:** Usar `actions/cache` con `~/.pnpm-store` y key basada en el hash de `pnpm-lock.yaml`.
+**Decisión:** Usar `actions/cache` con el path resuelto dinámicamente por `pnpm store path` y key basada en el hash de `pnpm-lock.yaml`.
 
 **Rationale:** Evita reinstalar todas las dependencias en cada run. `pnpm/action-setup@v4` con `run_install: false` da control explícito sobre cuándo instalar.
 

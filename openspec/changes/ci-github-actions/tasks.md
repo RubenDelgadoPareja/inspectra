@@ -6,7 +6,7 @@
 
 ## 2. Caché de dependencias
 
-- [x] 2.1 Añadir step de caché para el store de pnpm (`~/.pnpm-store`) con key basada en hash de `pnpm-lock.yaml`
+- [x] 2.1 Añadir step de caché para el store de pnpm (path obtenido con `pnpm store path`) con key basada en hash de `pnpm-lock.yaml`
 - [x] 2.2 Añadir step `pnpm install --frozen-lockfile` tras restaurar caché
 
 ## 3. Caché de Turbo

@@ -2,9 +2,9 @@ name: CI
 
 on:
   push:
-    branches: [main]
+    branches: [develop]
   pull_request:
-    branches: [main]
+    branches: [develop]
 
 env:
   PNPM_VERSION: 10.30.1
@@ -40,8 +40,9 @@ jobs:
       - uses: actions/cache@v4
         with:
           path: .turbo
-          key: ${{ runner.os }}-turbo-${{ github.sha }}
+          key: ${{ runner.os }}-turbo-${{ github.job }}-${{ github.sha }}
           restore-keys: |
+            ${{ runner.os }}-turbo-${{ github.job }}-
             ${{ runner.os }}-turbo-
 
       - name: Install dependencies
@@ -80,8 +81,9 @@ jobs:
       - uses: actions/cache@v4
         with:
           path: .turbo
-          key: ${{ runner.os }}-turbo-${{ github.sha }}
+          key: ${{ runner.os }}-turbo-${{ github.job }}-${{ github.sha }}
           restore-keys: |
+            ${{ runner.os }}-turbo-${{ github.job }}-
             ${{ runner.os }}-turbo-
 
       - name: Install dependencies
@@ -120,8 +122,9 @@ jobs:
       - uses: actions/cache@v4
         with:
           path: .turbo
-          key: ${{ runner.os }}-turbo-${{ github.sha }}
+          key: ${{ runner.os }}-turbo-${{ github.job }}-${{ github.sha }}
           restore-keys: |
+            ${{ runner.os }}-turbo-${{ github.job }}-
             ${{ runner.os }}-turbo-
 
       - name: Install dependencies
