@@ -69,7 +69,11 @@
     "coverageDirectory": "../coverage",
     "testEnvironment": "node",
     "coverageThreshold": {
-      "global": {
+      "src/domain/**/*.ts": {
+        "lines": 80,
+        "functions": 80
+      },
+      "src/application/**/*.ts": {
         "lines": 80,
         "functions": 80
       }

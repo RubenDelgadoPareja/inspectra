@@ -21,7 +21,7 @@ El proyecto carece de una estrategia de unit testing definida. El backend (NestJ
 ## Impact
 
 - `apps/web/package.json` — nuevas devDependencies de testing
-- `apps/web/jest.config.ts` — nuevo archivo de configuración
+- `apps/web/jest.config.js` — nuevo archivo de configuración
 - `apps/web/jest.setup.ts` — setup de jest-dom
-- `apps/api` — sin cambios en infraestructura, solo convenciones documentadas
+- `apps/api/package.json` — añade `coverageThreshold` con 80% para líneas y funciones
 - CI ya recoge `turbo test` automáticamente, no requiere cambios en el workflow
