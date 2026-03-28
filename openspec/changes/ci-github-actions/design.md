@@ -33,7 +33,7 @@ Monorepo gestionado con pnpm workspaces y Turborepo. Contiene dos apps (`api` en
 
 ### 3. Caché de Turbo
 
-**Decisión:** Usar `actions/cache` con `.turbo/` y key basada en el `runner.os` y el SHA del commit, con restore-keys para reutilizar cachés parciales.
+**Decisión:** Usar `actions/cache` con `.turbo/` y key basada en `runner.os`, `github.job` y el SHA del commit, con restore-keys para reutilizar cachés parciales.
 
 **Rationale:** Turbo es incremental por naturaleza — si los inputs de una tarea no cambiaron, la salta. La caché persistida entre runs maximiza este beneficio.
 

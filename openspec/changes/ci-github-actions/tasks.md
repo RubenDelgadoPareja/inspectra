@@ -11,7 +11,7 @@
 
 ## 3. Caché de Turbo
 
-- [x] 3.1 Añadir step de caché para `.turbo/` con key basada en `runner.os` y SHA del commit, con restore-keys para hits parciales
+- [x] 3.1 Añadir step de caché para `.turbo/` con key basada en `runner.os`, `github.job` y SHA del commit, con restore-keys para hits parciales entre jobs
 
 ## 4. Jobs del pipeline
 
